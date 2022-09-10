@@ -49,8 +49,8 @@ class Particle{
     update(){
         this.x += this.speedX;
         this.y += this.speedY;
-        if(this.size > 0.3){
-            this.size -= 0.3;
+        if(this.size > 0.2){
+            this.size -= 0.2;
         }
         
     }
@@ -62,12 +62,6 @@ class Particle{
     }
 }
 
-
-function init(){
-    
-
-}
-init();
 
 
 function handdleParticle(){
@@ -156,8 +150,8 @@ function Taildesign(){
         update(){
             this.x += this.speedX;
             this.y += this.speedY;
-            if(this.size > 0.3){
-                this.size -= 0.3;
+            if(this.size > 0.2){
+                this.size -= 0.2;
             }
             
         }
