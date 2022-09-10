@@ -4,7 +4,7 @@ canvas.height = window.innerHeight;
 canvas.width= window.innerWidth;
 
 
-const linebtn=document.getElementById('myCheck')
+
 
 function Linedesign(){
     const particleArray =[];
@@ -68,7 +68,7 @@ function init(){
 
 }
 init();
-console.log(particleArray);
+
 
 function handdleParticle(){
     for(i=0; i<particleArray.length;i++){
@@ -76,7 +76,7 @@ function handdleParticle(){
         particleArray[i].draw();
        
             for(j=i; j<particleArray.length;j++){
-                const dx = particleArray[i].x - particleArray[i].x;
+                const dx = particleArray[i].x - particleArray[i].y;
                 const dy = particleArray[j].y -particleArray[j].y;
                 const distance = Math.sqrt(dx*dx - dy*dy);
                 
