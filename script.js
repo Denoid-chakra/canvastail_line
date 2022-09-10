@@ -49,7 +49,7 @@ class Particle{
     update(){
         this.x += this.speedX;
         this.y += this.speedY;
-        if(this.size > 0.2){
+        if(this.size >= 0.2){
             this.size -= 0.2;
         }
         
@@ -85,7 +85,7 @@ function handdleParticle(){
 
 
             }
-            if(particleArray[i] <= 0.2){
+            if(particleArray[i].size <= 0.2){
                 particleArray.splice(i,1);
                 i --;
             
