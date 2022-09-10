@@ -76,8 +76,8 @@ function handdleParticle(){
         particleArray[i].draw();
        
             for(j=i; j<particleArray.length;j++){
-                const dx = particleArray[i].x - particleArray[i].y;
-                const dy = particleArray[j].y -particleArray[j].y;
+                const dx = particleArray[i].x - particleArray[j].x;
+                const dy = particleArray[i].y -particleArray[j].y;
                 const distance = Math.sqrt(dx*dx - dy*dy);
                 
                 if (distance < 40){
