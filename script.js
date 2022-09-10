@@ -80,7 +80,7 @@ function handdleParticle(){
                 const dy = particleArray[i].y -particleArray[j].y;
                 const distance = Math.sqrt(dx*dx - dy*dy);
                 
-                if (distance < 40){
+                if (distance < 100){
                     ctx.beginPath();
                     ctx.strokeStyle = particleArray[i].color;
                     ctx.lineWidth =  particleArray[i].size/2;
